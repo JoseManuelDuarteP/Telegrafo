@@ -69,6 +69,7 @@ public class TelegraphSystem {
                 }
                 cables.get(0).transmit(signal);
                 cables.remove(0);
+                
                 if(!repetidores.isEmpty()) {
                     if (repetidores.get(0).amplifySignal(signal) == null) {
                         System.out.println("Error, fallo en la batería");
